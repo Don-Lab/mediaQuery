@@ -1,0 +1,44 @@
+body{
+	font-family: Tahoma;
+}
+* {
+	box-sizing: border-box;
+}
+.row::after {
+	clear: both;
+	content: "";
+	display: block;
+}
+[class*="col-"] {
+	padding: 15px;
+	float: left;
+}
+.col-1{width: 25%;}
+.col-2{width: 50%;}
+.col-3{width: 75%;}
+.col-4{width: 100%;}
+
+/*media queries are like conditionals in that they will only run the code in them when the condition is true*/
+
+/*Syntax
+
+@media not|only mediatype and (condition) {
+	
+}
+
+*/
+
+@media only screen and (max-width: 768px) {  /*this says if a screen's width is 768px or smaller, run the code*/
+	[class*="col-"]{
+		width: 100%;
+	}
+}
+
+h1 {
+	text-align: center;
+	font-size: 450%;
+}
+h3 {
+	text-align: center;
+	font-size: 280%;
+}

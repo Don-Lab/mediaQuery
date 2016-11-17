@@ -28,6 +28,7 @@ body{
 
 */
 
+/*The example below is the most common type of media query where it will see what the size of the screen is*/
 @media only screen and (max-width: 768px) {  /*this says if a screen's width is 768px or smaller, run the code*/
 	[class*="col-"]{
 		width: 100%;
